@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Términos de Servicio — CheckOK</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F7F9FC;
+  --bg2: #EEF2F7;
+  --accent: #00C896;
+  --accent-light: #E8F5F1;
+  --text: #1A2332;
+  --text-muted: #5A6A7A;
+  --border: #DDE4ED;
+  --card: #FFFFFF;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  padding: 24px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+}
+
+.header-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-pill {
+  background: var(--accent);
+  color: white;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  letter-spacing: 0.3px;
+}
+
+.header-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 15px;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #E8F5F1 0%, #F0F7FF 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 56px 24px 48px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Sora', sans-serif;
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.hero h1 span {
+  color: var(--accent);
+}
+
+.hero p {
+  color: var(--text-muted);
+  font-size: 16px;
+  max-width: 480px;
+  margin: 0 auto 20px;
+}
+
+.updated-badge {
+  display: inline-block;
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 13px;
+  padding: 6px 16px;
+  border-radius: 20px;
+}
+
+/* Content */
+.content {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+.section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.2s;
+}
+
+.section:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.section-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--accent-light);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.section h2 {
+  font-family: 'Sora', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.section p {
+  color: var(--text-muted);
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.section p:last-child { margin-bottom: 0; }
+
+.section ul {
+  list-style: none;
+  margin-top: 8px;
+}
+
+.section ul li {
+  color: var(--text-muted);
+  font-size: 15px;
+  padding: 6px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.section ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+/* Highlight box */
+.highlight {
+  background: var(--accent-light);
+  border: 1px solid #C0E8DC;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-top: 12px;
+}
+
+.highlight p {
+  color: #00896A;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Footer */
+footer {
+  background: var(--text);
+  color: rgba(255,255,255,0.5);
+  text-align: center;
+  padding: 32px 24px;
+  font-size: 14px;
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+footer a:hover { text-decoration: underline; }
+
+.footer-logo {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <span class="logo-pill">✓ CheckOK</span>
+    <span class="header-title">Términos de Servicio</span>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>Términos de <span>Servicio</span></h1>
+  <p>Al usar CheckOK aceptas estos términos. Son sencillos y están escritos en lenguaje claro.</p>
+  <span class="updated-badge">Última actualización: marzo 2026</span>
+</div>
+
+<div class="content">
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">📱</div>
+      <h2>1. Aceptación de los términos</h2>
+    </div>
+    <p>Al descargar, instalar o usar CheckOK, aceptas estos Términos de Servicio. Si no estás de acuerdo con alguno de estos términos, por favor no uses la aplicación.</p>
+    <p>CheckOK es desarrollada y mantenida de forma independiente desde México.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">🎁</div>
+      <h2>2. Uso gratuito</h2>
+    </div>
+    <p>CheckOK es actualmente una aplicación gratuita. No se requiere pago para acceder a ninguna de sus funciones en su versión actual.</p>
+    <div class="highlight">
+      <p>✓ Sin cargos ocultos &nbsp;·&nbsp; Sin compras dentro de la app &nbsp;·&nbsp; Sin suscripciones requeridas actualmente</p>
+    </div>
+    <p style="margin-top:12px">Nos reservamos el derecho de introducir planes de pago opcionales en el futuro, sin afectar las funciones gratuitas existentes.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">👤</div>
+      <h2>3. Responsabilidad del usuario</h2>
+    </div>
+    <p>Al usar CheckOK, el usuario es responsable de:</p>
+    <ul>
+      <li>La información que comparte dentro de la app, incluyendo mensajes y datos de contacto</li>
+      <li>Mantener la confidencialidad de sus credenciales de acceso</li>
+      <li>Usar la app de forma responsable y no para fines ilegales o dañinos</li>
+      <li>Obtener el consentimiento de sus contactos antes de agregarlos a la app</li>
+      <li>La precisión de la información de contacto de emergencia que configura</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">🆘</div>
+      <h2>4. Funciones de emergencia</h2>
+    </div>
+    <p>CheckOK incluye funciones de alerta SOS y recordatorios de seguridad. Es importante entender que:</p>
+    <ul>
+      <li>CheckOK <strong>no es un servicio de emergencias oficial</strong> y no reemplaza al 911 ni a los servicios de emergencia locales</li>
+      <li>Las alertas dependen de conexión a internet y del funcionamiento de servicios de terceros</li>
+      <li>No garantizamos la entrega inmediata de notificaciones en todos los dispositivos</li>
+      <li>En caso de emergencia real, contacta siempre a los servicios de emergencia oficiales</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">⚙️</div>
+      <h2>5. Disponibilidad del servicio</h2>
+    </div>
+    <p>Hacemos nuestro mejor esfuerzo para mantener CheckOK disponible en todo momento, sin embargo:</p>
+    <ul>
+      <li>No garantizamos disponibilidad ininterrumpida del servicio</li>
+      <li>Podemos realizar mantenimientos programados o de emergencia</li>
+      <li>El servicio depende de infraestructura de terceros (Supabase, Firebase) sobre la cual no tenemos control total</li>
+      <li>No nos hacemos responsables por pérdidas derivadas de interrupciones del servicio</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">🔒</div>
+      <h2>6. Privacidad y datos</h2>
+    </div>
+    <p>El manejo de tus datos personales está descrito en nuestra <a href="https://valquiriamx.github.io/privacy-policy-checkok/" style="color: var(--accent); text-decoration: none; font-weight: 500;">Política de Privacidad</a>, que forma parte integral de estos términos.</p>
+    <p>Tus mensajes y datos se transmiten de forma segura mediante HTTPS y se almacenan en servidores protegidos.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">📝</div>
+      <h2>7. Modificaciones</h2>
+    </div>
+    <p>Podemos actualizar estos términos ocasionalmente. Te notificaremos de cambios importantes dentro de la app. El uso continuado de CheckOK después de los cambios implica la aceptación de los nuevos términos.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">✉️</div>
+      <h2>8. Contacto</h2>
+    </div>
+    <p>Si tienes preguntas sobre estos términos, puedes contactarnos en:</p>
+    <div class="highlight">
+      <p>📧 joseluis.santamaria@gmail.com</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-logo">CheckOK</div>
+  <p>© 2026 CheckOK. Hecho con ♥ en México.</p>
+  <p style="margin-top:8px">
+    <a href="https://valquiriamx.github.io/privacy-policy-checkok/">Política de Privacidad</a>
+  </p>
+</footer>
+
+</body>
+</html>
